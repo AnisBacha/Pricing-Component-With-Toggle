@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(240, 78%, 98%);
+  background-image: url('/images/bg-top.svg'), url('/images/bg-bottom.svg');
+  background-size: contain;
+  background-position: center;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+.header{
+  padding: 1rem;
+  text-align: center;
+}
+.header h1{
+  padding-block-start: 2rem;
+  color: hsl(233, 13%, 49%);
+}
+.header__planType{
+  margin-block: 2.5rem 1rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  color: hsl(234, 14%, 74%);
+  font-weight: 600;
+  width: 30%;
+  min-width: 300px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card{
+  background-color: white;
+  margin: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.circle-container{
+  background-image: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));  
+  border-radius: 20px;
+  width: 50px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+}
+.circle-container:hover{
+  background-image: linear-gradient(hsl(235, 42%, 83%),hsl(237, 46%, 73%));  
+}
+.circle{
+  margin-left: .25rem;
+  background-color: white;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+
+}
+.circle-left{
+  position: relative;
+  left: 0;
+}
+.circle-right{
+  position: relative;
+  left: 20px;
+}
+
+
+.card h2{
+  font-size: 1rem;
+  color: hsl(233, 13%, 49%);
+  margin-block: 1rem;
+
+}
+.card__price{
+  color:  hsl(232, 13%, 33%);
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.dollar-sign{
+  font-size: 2rem;
+}
+
+.card__prop{
+  color:  hsl(236, 9%, 63%);
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.card button{
+  background-image: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+  color: hsl(240, 78%, 98%);
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: .1ch;
+  
+
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+}
+.card button:hover{
+  background-image: none;
+  background-color: white;
+  color: hsl(237, 63%, 64%); 
+  outline: 1px solid hsl(237, 63%, 64%);
+}
+hr{
+  color: hsl(234, 14%, 74%);
+  height: .5;
+  width: 100%;
+  margin-block: 1.5rem;
+}
+
+.professional{
+  background-image: linear-gradient(hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+}
+.professional h2,
+.professional .card__price, 
+.professional .card__prop{
+  color: hsl(240, 78%, 98%);
+}
+.professional button{
+  background-image: none;
+  background-color: hsl(240, 78%, 98%);
+  color: hsl(237, 63%, 64%);
+}
+.professional button:hover{
+  background-image: none;
+  background-color: hsl(237, 63%, 64%);
+  color: hsl(240, 78%, 98%);
+  outline: 1px solid hsl(240, 78%, 98%);
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+    margin-block: 2rem;
+  }
+  main{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    margin: 0;
+    min-width: 300px;
+    height: 450px;
+
+  }
+  .professional{
+    min-width: 350px;
+    height: 500px;
+  }
+}
